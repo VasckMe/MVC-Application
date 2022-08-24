@@ -41,6 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				18E8B56C28B66FBA001A11BC /* MVC App */,
+				18E8B58128B670A7001A11BC /* Delegates */,
 				18E8B56B28B66FBA001A11BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +57,54 @@
 		18E8B56C28B66FBA001A11BC /* MVC App */ = {
 			isa = PBXGroup;
 			children = (
-				18E8B56D28B66FBA001A11BC /* AppDelegate.swift */,
-				18E8B56F28B66FBA001A11BC /* SceneDelegate.swift */,
-				18E8B57128B66FBA001A11BC /* ViewController.swift */,
-				18E8B57328B66FBA001A11BC /* Main.storyboard */,
+				18E8B58428B670CD001A11BC /* Models */,
+				18E8B58528B670E0001A11BC /* Data Meals */,
+				18E8B58228B670AE001A11BC /* Controllers */,
+				18E8B58328B670BB001A11BC /* Views */,
 				18E8B57628B66FBC001A11BC /* Assets.xcassets */,
-				18E8B57828B66FBC001A11BC /* LaunchScreen.storyboard */,
 				18E8B57B28B66FBC001A11BC /* Info.plist */,
 			);
 			path = "MVC App";
+			sourceTree = "<group>";
+		};
+		18E8B58128B670A7001A11BC /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				18E8B56D28B66FBA001A11BC /* AppDelegate.swift */,
+				18E8B56F28B66FBA001A11BC /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		18E8B58228B670AE001A11BC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18E8B57128B66FBA001A11BC /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18E8B58328B670BB001A11BC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18E8B57328B66FBA001A11BC /* Main.storyboard */,
+				18E8B57828B66FBC001A11BC /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18E8B58428B670CD001A11BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18E8B58528B670E0001A11BC /* Data Meals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Meals";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
