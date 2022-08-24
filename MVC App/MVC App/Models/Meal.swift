@@ -31,12 +31,12 @@ struct Meal {
         if feedbacks.isEmpty {
             return nil
         } else {
-            var average = 0
+            var average: Double = 0
             for feedback in feedbacks {
-                average += feedback.mark.rawValue
+                average += Double(feedback.mark.rawValue + 1)
             }
-            average /= feedbacks.count
-            return average
+            average /= Double(feedbacks.count)
+            return Int(average.rounded(.up))
         }
     }
 }

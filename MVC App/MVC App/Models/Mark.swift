@@ -8,7 +8,7 @@
 import Foundation
 
 enum Mark: Int {
-    case disgusting
+    case disgusting = 0
     case bad
     case average
     case good

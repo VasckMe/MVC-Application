@@ -97,6 +97,13 @@ final class MealsTableViewController: UITableViewController {
         performSegue(withIdentifier: "GoToDetailMealVC", sender: nil)
     }
     
+    // MARK: Unwind
+    
+    @IBAction func unwindToMealsTVC(_ unwindSegue: UIStoryboardSegue) {
+        let sourceViewController = unwindSegue.source
+        tableView.reloadData()
+    }
+    
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -105,7 +112,6 @@ final class MealsTableViewController: UITableViewController {
             let indexPath = tableView.indexPathForSelectedRow,
             segue.identifier == "GoToDetailMealVC"
         else { return }
-        let meal = DataMeals.shared.meals[indexPath.section][indexPath.row]
-        detailMealVC.meal = meal
+        detailMealVC.indexPath = indexPath
     }
 }

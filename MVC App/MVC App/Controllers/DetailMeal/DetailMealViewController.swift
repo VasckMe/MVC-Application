@@ -17,7 +17,7 @@ class DetailMealViewController: UIViewController {
     @IBOutlet private weak var checkReviewsOutlet: UIButton!
     
     // MARK: Properties
-    var meal: Meal?
+    var indexPath: IndexPath?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,9 +34,13 @@ class DetailMealViewController: UIViewController {
     }
     
     private func setupMeal() {
-        guard let meal = meal else {
+        guard
+            let unwrapIndexPath = indexPath
+        else {
             return
         }
+        let meal = DataMeals.shared.meals[unwrapIndexPath.section][unwrapIndexPath.row]
+        
         imageView.image = meal.image
         melonLabel.text = meal.name
         priceLabel.text = String(format: "%.2f", meal.price) + " " + "BYN"
@@ -45,5 +49,13 @@ class DetailMealViewController: UIViewController {
         let isHasFeedbacks = meal.feedbacks.count != 0
         checkReviewsOutlet.isEnabled = isHasFeedbacks
         checkReviewsOutlet.titleLabel?.text = "Check (\(meal.feedbacks.count)) reviews"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let feedbackVC = segue.destination as? FeedbackViewController,
+           let unwrapIndexPath = indexPath,
+           segue.identifier == "GoToFeedbackVC" {
+            feedbackVC.indexPath = unwrapIndexPath
+        }
     }
 }
