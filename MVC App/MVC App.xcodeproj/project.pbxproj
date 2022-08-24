@@ -13,6 +13,10 @@
 		18E8B57528B66FBA001A11BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E8B57328B66FBA001A11BC /* Main.storyboard */; };
 		18E8B57728B66FBC001A11BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E8B57628B66FBC001A11BC /* Assets.xcassets */; };
 		18E8B57A28B66FBC001A11BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E8B57828B66FBC001A11BC /* LaunchScreen.storyboard */; };
+		18E8B58728B67333001A11BC /* DataMeals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8B58628B67333001A11BC /* DataMeals.swift */; };
+		18E8B58928B6737D001A11BC /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8B58828B6737D001A11BC /* Meal.swift */; };
+		18E8B58B28B67628001A11BC /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8B58A28B67628001A11BC /* Feedback.swift */; };
+		18E8B58D28B676EB001A11BC /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8B58C28B676EB001A11BC /* Mark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		18E8B57628B66FBC001A11BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18E8B57928B66FBC001A11BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18E8B57B28B66FBC001A11BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E8B58628B67333001A11BC /* DataMeals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMeals.swift; sourceTree = "<group>"; };
+		18E8B58828B6737D001A11BC /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		18E8B58A28B67628001A11BC /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		18E8B58C28B676EB001A11BC /* Mark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,9 @@
 		18E8B58428B670CD001A11BC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				18E8B58828B6737D001A11BC /* Meal.swift */,
+				18E8B58A28B67628001A11BC /* Feedback.swift */,
+				18E8B58C28B676EB001A11BC /* Mark.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -103,6 +114,7 @@
 		18E8B58528B670E0001A11BC /* Data Meals */ = {
 			isa = PBXGroup;
 			children = (
+				18E8B58628B67333001A11BC /* DataMeals.swift */,
 			);
 			path = "Data Meals";
 			sourceTree = "<group>";
@@ -178,8 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E8B58928B6737D001A11BC /* Meal.swift in Sources */,
 				18E8B57228B66FBA001A11BC /* ViewController.swift in Sources */,
+				18E8B58B28B67628001A11BC /* Feedback.swift in Sources */,
+				18E8B58D28B676EB001A11BC /* Mark.swift in Sources */,
 				18E8B56E28B66FBA001A11BC /* AppDelegate.swift in Sources */,
+				18E8B58728B67333001A11BC /* DataMeals.swift in Sources */,
 				18E8B57028B66FBA001A11BC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
