@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DataMeals {
+final class DataMeals {
     static let shared = DataMeals()
     
     var categories = ["Fruits","Vegetables","Berries"]
@@ -22,10 +22,10 @@ class DataMeals {
             
             [Meal(name: "Cucumber", price: 0.75, image: #imageLiteral(resourceName: "cucumber"))],
             
-            [Meal(name: "Apple", price: 1.80, image: #imageLiteral(resourceName: "raspberry")),
-             Meal(name: "Orange", price: 2.10, image: #imageLiteral(resourceName: "blackberry")),
+            [Meal(name: "Raspberry", price: 1.80, image: #imageLiteral(resourceName: "raspberry")),
+             Meal(name: "Blueberry", price: 2.10, image: #imageLiteral(resourceName: "blackberry")),
              Meal(name: "Melon", price: 3.40, image: #imageLiteral(resourceName: "water-melon")),
-             Meal(name: "Mango", price: 2.00, image: #imageLiteral(resourceName: "strawberry"))]
+             Meal(name: "Strawberry", price: 2.00, image: #imageLiteral(resourceName: "strawberry"))]
         ]
     }
 }
