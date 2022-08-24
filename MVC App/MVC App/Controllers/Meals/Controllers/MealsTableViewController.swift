@@ -92,14 +92,20 @@ final class MealsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         return true
     }
-    /*
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "GoToDetailMealVC", sender: nil)
+    }
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        guard
+            let detailMealVC = segue.destination as? DetailMealViewController,
+            let indexPath = tableView.indexPathForSelectedRow,
+            segue.identifier == "GoToDetailMealVC"
+        else { return }
+        let meal = DataMeals.shared.meals[indexPath.section][indexPath.row]
+        detailMealVC.meal = meal
     }
-    */
-
 }

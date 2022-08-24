@@ -31,6 +31,6 @@ final class MealTableViewCell: UITableViewCell {
         mealImageView.image = model.image
         titleLabel.text = model.name
         markLabel.text = model.markString
-        priceLabel.text = model.price.description + " BYN"
+        priceLabel.text = String(format: "%.2f", model.price) + " BYN"
     }
 }

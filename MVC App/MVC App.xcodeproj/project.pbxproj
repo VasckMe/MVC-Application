@@ -19,6 +19,7 @@
 		18E8B59128B6839A001A11BC /* MealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8B59028B6839A001A11BC /* MealsTableViewController.swift */; };
 		18E8B59928B68508001A11BC /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8B59728B68508001A11BC /* MealTableViewCell.swift */; };
 		18E8B59A28B68508001A11BC /* MealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E8B59828B68508001A11BC /* MealTableViewCell.xib */; };
+		18E8B59E28B69C60001A11BC /* DetailMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8B59D28B69C60001A11BC /* DetailMealViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		18E8B59028B6839A001A11BC /* MealsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsTableViewController.swift; sourceTree = "<group>"; };
 		18E8B59728B68508001A11BC /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		18E8B59828B68508001A11BC /* MealTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealTableViewCell.xib; sourceTree = "<group>"; };
+		18E8B59D28B69C60001A11BC /* DetailMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMealViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		18E8B59328B683EC001A11BC /* DetailMeal */ = {
 			isa = PBXGroup;
 			children = (
+				18E8B59D28B69C60001A11BC /* DetailMealViewController.swift */,
 			);
 			path = DetailMeal;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				18E8B56E28B66FBA001A11BC /* AppDelegate.swift in Sources */,
 				18E8B58728B67333001A11BC /* DataMeals.swift in Sources */,
 				18E8B57028B66FBA001A11BC /* SceneDelegate.swift in Sources */,
+				18E8B59E28B69C60001A11BC /* DetailMealViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
