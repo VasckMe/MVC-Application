@@ -19,12 +19,13 @@ class DetailMealViewController: UIViewController {
     // MARK: Properties
     var indexPath: IndexPath?
     
+    // MARK: viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         setupMeal()
     }
     
-
+    // MARK: viewWillTransition
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         if view.bounds.height > view.bounds.width {
             stackInterfaceOutlet.axis = .vertical
@@ -33,6 +34,7 @@ class DetailMealViewController: UIViewController {
         }
     }
     
+    // MARK: Private functions
     private func setupMeal() {
         guard
             let unwrapIndexPath = indexPath
@@ -48,7 +50,8 @@ class DetailMealViewController: UIViewController {
         
         let isHasFeedbacks = meal.feedbacks.count != 0
         checkReviewsOutlet.isEnabled = isHasFeedbacks
-        checkReviewsOutlet.titleLabel?.text = "Check (\(meal.feedbacks.count)) reviews"
+//        checkReviewsOutlet.titleLabel?.text = "Check (\(meal.feedbacks.count.description)) reviews"
+        checkReviewsOutlet.setTitle("Check (\(meal.feedbacks.count)) reviews", for: .normal)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -56,6 +59,12 @@ class DetailMealViewController: UIViewController {
            let unwrapIndexPath = indexPath,
            segue.identifier == "GoToFeedbackVC" {
             feedbackVC.indexPath = unwrapIndexPath
+        }
+        
+        if let reviewTVC = segue.destination as? ReviewTableViewController,
+           let unwrapIndexPath = indexPath,
+           segue.identifier == "GoToReviewTVC" {
+            reviewTVC.indexPathOfMeal = unwrapIndexPath
         }
     }
 }

@@ -21,6 +21,9 @@
 		18E8B59A28B68508001A11BC /* MealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E8B59828B68508001A11BC /* MealTableViewCell.xib */; };
 		18E8B59E28B69C60001A11BC /* DetailMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8B59D28B69C60001A11BC /* DetailMealViewController.swift */; };
 		18E8B5A028B6B0E4001A11BC /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8B59F28B6B0E4001A11BC /* FeedbackViewController.swift */; };
+		18E8B5A528B79277001A11BC /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8B5A428B79277001A11BC /* ReviewTableViewController.swift */; };
+		18E8B5A828B7930E001A11BC /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8B5A628B7930E001A11BC /* ReviewTableViewCell.swift */; };
+		18E8B5A928B7930E001A11BC /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E8B5A728B7930E001A11BC /* ReviewTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		18E8B59828B68508001A11BC /* MealTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealTableViewCell.xib; sourceTree = "<group>"; };
 		18E8B59D28B69C60001A11BC /* DetailMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMealViewController.swift; sourceTree = "<group>"; };
 		18E8B59F28B6B0E4001A11BC /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		18E8B5A428B79277001A11BC /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
+		18E8B5A628B7930E001A11BC /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		18E8B5A728B7930E001A11BC /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 				18E8B59228B683D5001A11BC /* Meals */,
 				18E8B59328B683EC001A11BC /* DetailMeal */,
 				18E8B59428B683F6001A11BC /* Feedback */,
+				18E8B5A128B7922C001A11BC /* Reviews */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -171,6 +178,32 @@
 			path = "Cell View";
 			sourceTree = "<group>";
 		};
+		18E8B5A128B7922C001A11BC /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				18E8B5A228B79237001A11BC /* Controllers */,
+				18E8B5A328B79253001A11BC /* Cell View */,
+			);
+			path = Reviews;
+			sourceTree = "<group>";
+		};
+		18E8B5A228B79237001A11BC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18E8B5A428B79277001A11BC /* ReviewTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18E8B5A328B79253001A11BC /* Cell View */ = {
+			isa = PBXGroup;
+			children = (
+				18E8B5A628B7930E001A11BC /* ReviewTableViewCell.swift */,
+				18E8B5A728B7930E001A11BC /* ReviewTableViewCell.xib */,
+			);
+			path = "Cell View";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,6 +265,7 @@
 				18E8B59A28B68508001A11BC /* MealTableViewCell.xib in Resources */,
 				18E8B57A28B66FBC001A11BC /* LaunchScreen.storyboard in Resources */,
 				18E8B57728B66FBC001A11BC /* Assets.xcassets in Resources */,
+				18E8B5A928B7930E001A11BC /* ReviewTableViewCell.xib in Resources */,
 				18E8B57528B66FBA001A11BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,9 +278,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E8B58928B6737D001A11BC /* Meal.swift in Sources */,
+				18E8B5A828B7930E001A11BC /* ReviewTableViewCell.swift in Sources */,
 				18E8B58B28B67628001A11BC /* Feedback.swift in Sources */,
 				18E8B58D28B676EB001A11BC /* Mark.swift in Sources */,
 				18E8B5A028B6B0E4001A11BC /* FeedbackViewController.swift in Sources */,
+				18E8B5A528B79277001A11BC /* ReviewTableViewController.swift in Sources */,
 				18E8B59128B6839A001A11BC /* MealsTableViewController.swift in Sources */,
 				18E8B59928B68508001A11BC /* MealTableViewCell.swift in Sources */,
 				18E8B56E28B66FBA001A11BC /* AppDelegate.swift in Sources */,

@@ -80,6 +80,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Check () reviews">
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="8AF-VN-SKC" kind="show" identifier="GoToReviewTVC" id="221-2e-FsA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sb7-kI-dtz">
                                                 <rect key="frame" x="0.0" y="237" width="364" height="28"/>
@@ -124,6 +127,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uRc-Nq-ei5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1130" y="-42"/>
+        </scene>
+        <!--Review Table View Controller-->
+        <scene sceneID="0Fx-bS-8Tw">
+            <objects>
+                <tableViewController id="8AF-VN-SKC" customClass="ReviewTableViewController" customModule="MVC_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="99w-Ej-p5F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="8AF-VN-SKC" id="pJz-jD-YBW"/>
+                            <outlet property="delegate" destination="8AF-VN-SKC" id="Ii1-LS-Y0S"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="hJ9-P8-YOR"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PAi-W2-qJ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957" y="-459"/>
         </scene>
         <!--Feedback View Controller-->
         <scene sceneID="moo-D2-yQH">
