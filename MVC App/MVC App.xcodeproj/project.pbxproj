@@ -24,6 +24,7 @@
 		18E8B5A528B79277001A11BC /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8B5A428B79277001A11BC /* ReviewTableViewController.swift */; };
 		18E8B5A828B7930E001A11BC /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8B5A628B7930E001A11BC /* ReviewTableViewCell.swift */; };
 		18E8B5A928B7930E001A11BC /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E8B5A728B7930E001A11BC /* ReviewTableViewCell.xib */; };
+		18E8B5AC28B7D3AE001A11BC /* DetailReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8B5AB28B7D3AD001A11BC /* DetailReviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		18E8B5A428B79277001A11BC /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
 		18E8B5A628B7930E001A11BC /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		18E8B5A728B7930E001A11BC /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
+		18E8B5AB28B7D3AD001A11BC /* DetailReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailReviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				18E8B59328B683EC001A11BC /* DetailMeal */,
 				18E8B59428B683F6001A11BC /* Feedback */,
 				18E8B5A128B7922C001A11BC /* Reviews */,
+				18E8B5AA28B7D383001A11BC /* Detail Review */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -204,6 +207,14 @@
 			path = "Cell View";
 			sourceTree = "<group>";
 		};
+		18E8B5AA28B7D383001A11BC /* Detail Review */ = {
+			isa = PBXGroup;
+			children = (
+				18E8B5AB28B7D3AD001A11BC /* DetailReviewViewController.swift */,
+			);
+			path = "Detail Review";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -282,6 +293,7 @@
 				18E8B58B28B67628001A11BC /* Feedback.swift in Sources */,
 				18E8B58D28B676EB001A11BC /* Mark.swift in Sources */,
 				18E8B5A028B6B0E4001A11BC /* FeedbackViewController.swift in Sources */,
+				18E8B5AC28B7D3AE001A11BC /* DetailReviewViewController.swift in Sources */,
 				18E8B5A528B79277001A11BC /* ReviewTableViewController.swift in Sources */,
 				18E8B59128B6839A001A11BC /* MealsTableViewController.swift in Sources */,
 				18E8B59928B68508001A11BC /* MealTableViewCell.swift in Sources */,

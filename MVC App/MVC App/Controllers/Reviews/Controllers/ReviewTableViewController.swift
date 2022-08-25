@@ -63,6 +63,10 @@ class ReviewTableViewController: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "GoToDetailReviewVC", sender: nil)
+    }
+    
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
         let feedback = DataMeals.shared.meals[indexPathOfMeal!.section][indexPathOfMeal!.row].feedbacks.remove(at: fromIndexPath.row)
         DataMeals.shared.meals[indexPathOfMeal!.section][indexPathOfMeal!.row].feedbacks.insert(feedback, at: to.row)
@@ -74,15 +78,14 @@ class ReviewTableViewController: UITableViewController {
         return true
     }
     
-
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        guard
+            let detailReviewVC = segue.destination as? DetailReviewViewController,
+            let indexPath = tableView.indexPathForSelectedRow,
+            segue.identifier == "GoToDetailReviewVC" else { return }
+        detailReviewVC.indexPath = indexPath
+        detailReviewVC.meal = DataMeals.shared.meals[indexPathOfMeal!.section][indexPathOfMeal!.row]
     }
-    */
-
 }
