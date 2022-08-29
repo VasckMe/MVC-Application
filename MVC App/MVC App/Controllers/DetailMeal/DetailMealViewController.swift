@@ -36,11 +36,8 @@ class DetailMealViewController: UIViewController {
     
     // MARK: Private functions
     private func setupMeal() {
-        guard
-            let unwrapIndexPath = indexPath
-        else {
-            return
-        }
+        guard let unwrapIndexPath = indexPath else { return }
+        
         let meal = DataMeals.shared.meals[unwrapIndexPath.section][unwrapIndexPath.row]
         
         imageView.image = meal.image
